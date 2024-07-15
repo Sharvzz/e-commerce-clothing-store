@@ -199,3 +199,56 @@ body{
   text-align: center;
   margin-left: 400px
 }
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .search-bar {
+      width: 100%;
+      margin-top: 1rem;
+  }
+
+  .image1 {
+      text-align: center;
+  }
+
+  .abtus {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      padding: 0.5rem;
+  }
+
+  .nav-links a {
+      margin: 0.5rem 0;
+  }
+
+  .head {
+      font-size: 1.5rem;
+  }
+
+  .search-bar .bar {
+      width: 80%;
+  }
+
+  .abt, .cnctus {
+      margin: 0.5rem;
+  }
+}
