@@ -5,22 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samara clothings</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <img src="cover5.png" class="logo">
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Products</a>
-            <a href="#">Category</a>
+            <a href="index.html">Home</a>
+            <!-- <a href="#">About Us</a> -->
+            <a href="#contact">Contact Us</a>
+            <a href="#" class="Category">Category 
+                <div class="dropdown">
+                    <ul>
+                        <li onclick="(function(){
+                            window.location.href='men.html';
+                        })();">Men</li>
+                        <li onclick="(function(){
+                            window.location.href='women.html';
+                        })();">Women</li>
+                        <li onclick="(function(){
+                            window.location.href='kids.html';
+                        })();">Kids</li>
+                        
+                    </ul>
+                </div>
+            </a>
+            <i class="clickdown"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+              </svg>
+              </i>
         </div>
         <div class="search-bar">
             <input class="bar" type="text" placeholder="Search..." size="50">
             <button class="search"  type="submit"><img src="png-transparent-magnifying-glass-magnifying-glass-icon-text-logo-computer-program.png"></button>
         </div>
-        <button class="login-btn">Login</button>
+        <a href="login.html"><button class="login-btn">Login</button></a>
     </nav>
+    <div class="image1">
+    <h1 class="head" style="color: white;">Your Search Ends Here</h1>
+    <img src="clark-street-mercantile-P3pI6xzovu0-unsplash.jpg" class="bg-image">
+    </div>
+   <div class="enter-store">
+    <button class="enterbutton">Enter Store</button>
+   </div>
+   <div class="abtus">
+        <div class="abt">
+            <h2>About us</h2>
+            <p>We are a dedicated team committed to providing the best services to our clients. 
+                Our mission is to innovate and lead in our industry 
+                with integrity and excellence.</p>
+        </div>
+        <div class="cnctus" id="contact">
+            <h2>Contact us</h2>
+            <p>For inquiries, please reach out to us through the following channels:</p>
+                <p><a href="mailto:loganathansharvesh14@gmail.com" style="color: #fff;">contact@ourcompany.com</a> </p>
+                <p>Phone: +91 6385492724</p>
+                <p>Address: 123 Main Street, City, Country</p>
+        </div>
+    </div>
 </body>
 </html>
